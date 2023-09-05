@@ -1,0 +1,141 @@
+html, #root, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(234, 216, 195);
+}
+
+h1{
+  font-size: 1.7rem;
+  padding: 0 1rem;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 3px rgb(188, 146, 146);
+  padding: 1rem;
+}
+
+.divisas-content{
+  max-width: 50vw;
+  margin: auto;
+}
+
+.divisa-resultado, 
+.divisa-a-convertir{
+  margin: 1rem;
+}
+
+.divisa-a-convertir input,
+.divisa-resultado input{
+  margin-right: 1rem;
+  border: none;
+  border-bottom: 2px solid black;
+  box-shadow: 2px 3px 3px rgb(188, 146, 146);
+  padding-left: 1rem;
+  outline: none;
+  background-color: rgb(244, 244, 244);
+}
+
+select, input{
+  height: 2rem;
+  font-size: 1.2rem;
+}
+
+select{
+  border: none;
+  padding: 0 .5rem;
+  background-color: rgb(244, 244, 244);
+  border-bottom: 2px solid black;
+  box-shadow: 2px 3px 3px rgb(188, 146, 146);
+  cursor: pointer;
+}
+
+.input-resultado{
+  color: red;
+}
+
+button{
+  margin: .5rem 0;
+  width: 75%;
+  font-size: 1.2rem;
+  border: none;
+  background-color: cadetblue;
+  border-radius: 5px;
+  padding: .3rem 0;
+}
+
+button:hover{
+  background-color: rgb(50, 84, 86);
+  color: beige;
+}
+
+@media only screen and (max-width: 1094px){
+  /* .App{
+    width: 100%;
+  } */
+
+  .divisas-content{
+    min-width: 100%;
+    margin: 0;
+  }
+
+  .divisa-a-convertir input,
+  .divisa-resultado input{
+    margin-right: 0;
+    padding-left: 0;
+    text-align: center;
+    width: 75vw;
+    margin-bottom: 1rem;
+  }
+
+  .divisa-a-convertir{
+    margin-bottom: 4.5rem;
+  }
+  select, [type='text'], [type='number']{
+    width: 75vw;
+    border: none;
+    background-color: rgb(244, 244, 244);
+    border-bottom: 2px solid black;
+    box-shadow: 2px 3px 3px rgb(188, 146, 146);
+    text-align: center;
+    margin-bottom: .5rem;
+  }
+  
+  [type='text'] {
+    color: red;
+    cursor: pointer;
+  }
+
+  .creador{
+    font-size: 1rem;
+  }
+
+  button{
+    margin-bottom: .5rem;
+    width: 75vw;
+    font-size: 1.2rem;
+    border: none;
+    background-color: cadetblue;
+    border-radius: 5px;
+    padding: .3rem 0;
+  }
+} 
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
