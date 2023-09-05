@@ -1,6 +1,6 @@
 {
   "homepage": "https://baldi29194.github.io/conversor_divisas/",
-  "name": "conversor_divisas",
+  "name": "conversor-divisas",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
